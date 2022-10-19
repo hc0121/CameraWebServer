@@ -33,12 +33,6 @@
 
 #include "camera_pins.h"
 
-// ===========================
-// Enter your WiFi credentials
-// ===========================
-/*const char* ssid = "yydn";
-const char* password = "00001111";*/
-
 void startCameraServer();
 
 void setup() {
@@ -126,14 +120,6 @@ void setup() {
 #if defined(CAMERA_MODEL_ESP32S3_EYE)
   s->set_vflip(s, 1);
 #endif
-
-  /*WiFi.begin(ssid, password);
-  WiFi.setSleep(false);
-
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }*/
   Serial.println("");
   Serial.println("WiFi connected");
 
